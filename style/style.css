@@ -1,60 +1,89 @@
 @font-face {
-    font-family: "ThistailsReg";
-    src: url(/fonts//Thistails-Regular.ttf) format("truetype"); 
+  font-family: "ThistailsScript";
+  src: url(/fonts//Thistails-Regular.ttf) format("truetype");
 }
-/* Nav Section */
-
-.hero-logo{
-    max-width: 25%;
-    height: auto;
-    display: table;
-    margin: 50px auto;
-    padding: 20;
+@font-face {
+  font-family: "Thistails";
+  src: url(/fonts//Thistails-Sans.ttf) format("truetype");
+}
+section{
+    padding: 50px 0px;
 }
 
-/* Sub Hero Section */
-.social-info{
-margin-top: 50px;
+/* Hero Logo Image */
+.main-hero-logo-container {
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+  width: auto;
+  height: 300px;
 }
 
-.img-fluid{
-height: 50vh;
+/* Sub Hero */
+.sub-hero-wrapper {
+  display: flex;
+  justify-content: center;
 }
-.image-test{
+.sub-hero-image {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+.my-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.my-grid > img{
     width: 100%;
-    height: 600px;
+    height: 400px;
     object-fit: cover;
-    object-position: center;
+    object-position: bottom;
 }
-.centered-img-text {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%); 
-    font-family: "ThistailsReg", sans-serif ;
-    font-size: 80px;
-    filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.8));
 
-  }
-  .containertwo {
-    position: relative;
-    text-align: center;
-    color: white;
-  }
+/* Welcome Section */
+.card-img-top{
+    border-radius: 50px 
+}
+.welcome-image {
+ 
+  width: 400px;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 20px 50px;
+}
+.welcome-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.welcome-text-header{
+    font-family: "Thistails", sans-serif;
+    color: #234921;
+}
+
 /* coming soon sections */
-.store-section, .email-section{
-padding: 50px;
-   color: blue;
-    text-align: center;
+.store-section,
+.email-section {
+  padding: 50px;
+  color: blue;
+  text-align: center;
 }
 
 /* footer */
-footer{
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    height: 60px;
-    line-height: 60px;
-    background-color: #f5f5f5;
+footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  background-color: #f5f5f5;
 }
-
+/* Slide Show scrub */
+.instagram-slider {
+  padding: 200px 0px 50px 0px;
+}
+.slider-subtext {
+  font-family: "Thistails", sans-serif;
+  text-align: center;
+  padding: 20px;
+}
